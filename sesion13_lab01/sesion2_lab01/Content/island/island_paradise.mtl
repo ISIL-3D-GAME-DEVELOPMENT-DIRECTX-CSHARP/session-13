@@ -1,0 +1,81 @@
+newmtl material_1
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.14902 0.14902 0.14902
+Km 0
+map_Kd /Maps/Terrain 1_mtl1_ambicol.jpg
+map_Bump /Maps/Terrain 1_mtl1_bumpamt.jpg
+
+newmtl default
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/1arw.jpg
+
+newmtl default_palm_leaves
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/Doc4b2.jpg
+
+newmtl default_tropical_bongalos
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/byw1b.jpg
+
+newmtl default_roof_ropes_mult
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/xf1.jpg
+
+newmtl default_walls_mult
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/fc1b.jpg
+
+newmtl default_grass
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/Terrain 1_mtl1_ambicol.jpg
+
+newmtl default_rocks
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/tga1.jpg
+

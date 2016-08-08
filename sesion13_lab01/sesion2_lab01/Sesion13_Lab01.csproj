@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD74DE12-E0B0-43B0-A9EA-8CB9AEAFF1F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sesion2_Lab01</RootNamespace>
+    <AssemblyName>Sesion2_Lab01</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="com\game\gui\GuiStartMenu.cs" />
+    <Compile Include="com\game\gui\GuiWaraScreen.cs" />
+    <Compile Include="com\isil\components\SimpleButton.cs" />
+    <Compile Include="com\isil\content\NBitmapFont.cs" />
+    <Compile Include="com\isil\content\NSound.cs" />
+    <Compile Include="com\isil\data\EnumNKeyCode.cs" />
+    <Compile Include="com\isil\data\NTouchLocationState.cs" />
+    <Compile Include="com\isil\data\NTouchState.cs" />
+    <Compile Include="com\isil\data_type\NColor.cs" />
+    <Compile Include="com\isil\modules\skinnedModel\AnimationChannel.cs" />
+    <Compile Include="com\isil\modules\skinnedModel\AnimEvaluator.cs" />
+    <Compile Include="com\isil\modules\skinnedModel\Bone.cs" />
+    <Compile Include="com\isil\modules\skinnedModel\MeshGeometry.cs" />
+    <Compile Include="com\isil\modules\skinnedModel\MutableTuple.cs" />
+    <Compile Include="com\isil\modules\skinnedModel\SceneAnimator.cs" />
+    <Compile Include="com\isil\modules\skinnedModel\SkinnedModel.cs" />
+    <Compile Include="com\isil\modules\skinnedModel\SkinnedModelInstance.cs" />
+    <Compile Include="com\isil\modules\skinnedModel\Vertex.cs" />
+    <Compile Include="com\isil\render\batcher\NSpriteBatch.cs" />
+    <Compile Include="com\isil\render\components\NTextField2D.cs" />
+    <Compile Include="com\isil\render\data\dtNQuad.cs" />
+    <Compile Include="com\isil\render\data\NVertexPositionTexture.cs" />
+    <Compile Include="com\isil\render\graphics\NSprite2D.cs" />
+    <Compile Include="com\isil\modules\assim_loader\NCrossModelLoader.cs" />
+    <Compile Include="com\isil\modules\assim_loader\NModel.cs" />
+    <Compile Include="com\isil\modules\assim_loader\NModelMesh.cs" />
+    <Compile Include="com\isil\shader\d2d\ShaderBitmapFontInputParameters.cs" />
+    <Compile Include="com\isil\shader\d2d\ShaderInputParameters.cs" />
+    <Compile Include="com\isil\shader\d2d\ShaderBitmapFontTextureProgram.cs" />
+    <Compile Include="com\isil\shader\d2d\ShaderTextureProgram.cs" />
+    <Compile Include="com\isil\shader\skinnedModel\SkinnedModelInputParameters.cs" />
+    <Compile Include="com\isil\shader\skinnedModel\SkinnedModelProgram.cs" />
+    <Compile Include="com\isil\system\fontSystem\EnumNBitmapFontRawType.cs" />
+    <Compile Include="com\isil\system\fontSystem\EnumNCharacterASCII.cs" />
+    <Compile Include="com\isil\system\fontSystem\EnumNCharacterUnicode.cs" />
+    <Compile Include="com\isil\system\fontSystem\NBitmapFontCharDescriptor.cs" />
+    <Compile Include="com\isil\system\fontSystem\NBitmapFontCharset.cs" />
+    <Compile Include="com\isil\system\fontSystem\NBitmapFontKerning.cs" />
+    <Compile Include="com\isil\system\fontSystem\NBitmapFontPage.cs" />
+    <Compile Include="com\isil\system\fontSystem\NBitmapFontParser.cs" />
+    <Compile Include="com\isil\system\screenManager\data\dtScreenInfo.cs" />
+    <Compile Include="com\isil\system\screenManager\Screen.cs" />
+    <Compile Include="com\isil\system\screenManager\ScreenManager.cs" />
+    <Compile Include="com\isil\system\soundSystem\NSoundDevice.cs" />
+    <Compile Include="com\isil\system\soundSystem\NSoundInstance.cs" />
+    <Compile Include="com\isil\utils\NCommon.cs" />
+    <Compile Include="com\isil\utils\NMouseHandler.cs" />
+    <Compile Include="com\isil\render\NBlend.cs" />
+    <Compile Include="com\isil\render\graphics\Plane3D.cs" />
+    <Compile Include="com\isil\shader\d3d\Shader3DProgram.cs" />
+    <Compile Include="com\isil\shader\d3d\Shader3DInputParameters.cs" />
+    <Compile Include="com\isil\system\NViewport.cs" />
+    <Compile Include="NativeApplication.cs" />
+    <Compile Include="com\isil\content\NTexture2D.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="com\isil\render\camera\RenderCamera.cs" />
+    <Compile Include="com\isil\math\SimpleMatrix.cs" />
+    <Compile Include="com\isil\utils\NKeyboardHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AssimpNet">
+      <HintPath>..\..\libs\assimp\AssimpNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=2.4.2.0, Culture=neutral, PublicKeyToken=627a3d6d1956f55a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.D3DCompiler, Version=2.4.2.0, Culture=neutral, PublicKeyToken=627a3d6d1956f55a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\SharpDX.D3DCompiler.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=2.4.2.0, Culture=neutral, PublicKeyToken=627a3d6d1956f55a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=2.4.2.0, Culture=neutral, PublicKeyToken=627a3d6d1956f55a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.MediaFoundation">
+      <HintPath>..\..\libs\SharpDX.MediaFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XAudio2">
+      <HintPath>..\..\libs\SharpDX.XAudio2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assimp32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\kronika\kronika_16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\kronika\kronika_32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fx_PrimitiveTexture3D.fx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fx_SimpleBitmapFont.fx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fx_SkinnedModel.fx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Fx_TexturePrimitive.fx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\island\Maps\1arw.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\island\Maps\byw1b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\island\Maps\Doc4b2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\island\Maps\fc1b.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\island\Maps\Terrain 1_mtl1_ambicol.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\island\Maps\Terrain 1_mtl1_bumpamt.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\island\Maps\tga1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\island\Maps\xf1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\pavilon\Arch_Bldg_Pavilion01_Textures\Copper01.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\pavilon\Arch_Bldg_Pavilion01_Textures\CROSSVILLE_ORIGINS-GLASS_WATER-BLEND-12x12lig2300.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\pavilon\Arch_Bldg_Pavilion01_Textures\Roofing_Tile_Spanish.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\pavilon\Arch_Bldg_Pavilion01_Textures\TilesOrnate0158_1_S.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\pavilon\Arch_Bldg_Pavilion01_Textures\TilesOrnate0158_2_S1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\pavilon\Arch_Bldg_Pavilion01_Textures\tileuniv-madriddif080ref005.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\pavilon\Arch_Bldg_Pavilion01_Textures\Vegetation_Lobelia.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\pavilon\Arch_Bldg_Pavilion01_Textures\Vegetation_Pansies.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\pavilon\Arch_Bldg_Pavilion01_Textures\Water_Pool_Light.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\pavilon\Arch_Bldg_Pavilion01_Textures\Water_Sparkling1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sound\music_play_button.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\spMario.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\model_obj_chair.obj">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\island\island_paradise.mtl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\island\model_obj_island_paradise.obj">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\pavilon\Arch_Bldg_Pavilion01.mtl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\pavilon\Arch_Bldg_Pavilion01.obj">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font\kronika\kronika_16.fnt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\font\kronika\kronika_32.fnt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\magician\magician.dds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\magician\magician.X">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
